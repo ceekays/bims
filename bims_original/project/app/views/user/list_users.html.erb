@@ -1,0 +1,16 @@
+<%@my_title = 'List of Administrators' %>
+<table width = 80% >
+<tr><td> </td> <td><b><u>Username</u></b> </td> <td><b><u>Type</u></b></td></tr>
+<ul>
+  <% for user in @all_users %>
+     <tr> <td><center>*</center></td> <td> <%= h(user.username) %></td> <td> <%= h(user.system_id) %></td></tr>
+  <% end %>
+</ul>
+
+</table>
+
+<%= link_to "[X]" , { # link_to options
+                               :controller => 'user',:action => 'delete_user',:id => user},
+                             { # html options
+                               :method => :post,:confirm => "Do you really want to delete #{user.username}?"
+                             } %>

@@ -1,0 +1,28 @@
+<p>
+  <b>Pg title:</b>
+  <%=h @page_content.pg_title %>
+</p>
+
+<p>
+  <b>Pg heading:</b>
+  <%=h @page_content.pg_heading %>
+</p>
+
+<p>
+  <b>Pg content:</b>
+  <%=h @page_content.pg_content %>
+</p>
+
+<p>
+  <b>Sb title:</b>
+  <%=h @page_content.sb_title %>
+</p>
+
+<p>
+  <b>Sb content:</b>
+  <%=h @page_content.sb_content %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_content_path(@page_content) %> |
+<%= link_to 'Back', page_contents_path %>

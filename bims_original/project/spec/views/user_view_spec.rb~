@@ -1,0 +1,11 @@
+require File.dirname(__FILE__) + '/../spec_helper'
+
+article = mock_model(User)
+
+article.should_receive(:author).and_return("edmond")
+
+article.should_receive(:text).and_return("this is the text of the article")
+
+assigns[:article] = article
+
+assigns[:articles] = [article]

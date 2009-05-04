@@ -1,0 +1,35 @@
+<h1>New page_content</h1>
+
+<% form_for(@page_content) do |f| %>
+  <%= f.error_messages %>
+   <p>
+    <%= f.label :pg_name %><br />
+    <%= f.text_field :pg_name %>
+  </p>
+  
+  <p>
+    <%= f.label :pg_title %><br />
+    <%= f.text_field :pg_title %>
+  </p>
+  <p>
+    <%= f.label :pg_heading %><br />
+    <%= f.text_field :pg_heading %>
+  </p>
+  <p>
+    <%= f.label :pg_content %><br />
+    <%= f.text_area :pg_content %>
+  </p>
+  <p>
+    <%= f.label :sb_title %><br />
+    <%= f.text_field :sb_title %>
+  </p>
+  <p>
+    <%= f.label :sb_content %><br />
+    <%= f.text_area :sb_content %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', page_contents_path %>
