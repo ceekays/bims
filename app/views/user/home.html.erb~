@@ -1,6 +1,0 @@
-<%= if @page then render(:inline => @page.pg_content, :type => 'rhtml')end %>
-<%=render{:action => user}%>
-<ul>
-			<li> <%= link_to 'Users Menu',{:controller=>'user',:action=>'home'}%>         </li>
-         <li> <%= link_to 'Edit Page Content',{:controller=>'page_contents'}%>    </li>
-         </ul>
