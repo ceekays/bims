@@ -1,0 +1,18 @@
+class PagesController < ApplicationController
+  def home
+   
+  end
+
+  def about
+   @pagetitle = " Baobab Inventory Management System: About Page"
+  end
+
+  def contact
+   @pagetitle = " Baobab Inventory Management System: Contact Page"
+  end
+
+  def users
+   @pagetitle = " Baobab Inventory Management System: Users Page"
+  end
+
+end

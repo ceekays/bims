@@ -1,0 +1,1 @@
+<%= if @page then render(:inline => @page.pg_content, :type => 'rhtml') else @page.pg_content end%>
